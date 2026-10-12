@@ -8,12 +8,12 @@
 
 ## 发布到 GitHub Pages
 
-目标账号为 `piblockarc`，个人主页仓库应命名为 `piblockarc.github.io`，发布后的地址为 `https://piblockarc.github.io/`。
+当前账号为 `piblockarc`，仓库为 `pizpi`，已发布地址为 `https://piblockarc.github.io/pizpi/`。
 
-1. 在该账号创建公开仓库 `piblockarc.github.io`。
+1. 使用公开仓库 `pizpi`。
 2. 将 `index.html`、`styles.css`、`.nojekyll` 和本说明放入仓库根目录。
 3. 打开仓库 **Settings → Pages**，在 **Build and deployment** 中选择 **Deploy from a branch**，分支选 `main`，目录选 `/(root)`，保存。
-4. 等待 GitHub Pages 发布成功后访问 `https://piblockarc.github.io/`。
+4. 等待 GitHub Pages 发布成功后访问 `https://piblockarc.github.io/pizpi/`。
 
 页面不依赖构建工具或服务端。`preview-desktop.png` 和 `preview-mobile.png` 是本地检查截图，无需上传。
 
@@ -24,4 +24,10 @@
 - 在线修改：打开 GitHub 仓库中的 `index.html`，点击编辑按钮修改并提交，Pages 会重新发布。
 - 正式公开前，请核对联系方式与项目资料的公开权限。
 
-当前版本为内容框架，项目图片、演示视频、代码仓库和 PDF 简历链接可在下一轮补充。
+当前文字根据个人简历和自我介绍 PPT 整理。三个项目均包含目标、系统方案、个人工作、结果，以及可展开的技术实现与调试难点。
+
+## 添加项目图片
+
+将图片放入 `assets/`，在对应项目 HTML 注释位置加入 `figure`，使用 `project-media` 样式。图片默认 `width: 100%`、`height: auto`，保持原始比例，图注写明实物或运行结果。
+
+目前尚未插入图片，收到整理好的素材后补充。奖学金比例、数学竞赛年份在两份材料中存在差异，页面暂未列出这些细节。

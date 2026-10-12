@@ -34,7 +34,7 @@
         <h1 id="intro-title">邓睿哲</h1>
         <p class="intro__affiliation">重庆大学 · 微电子与通信工程学院 · 通信工程</p>
         <p class="intro__summary">
-          关注嵌入式控制、传感器数据处理与无线通信系统。通过电子设计竞赛和课程项目，积累了从模块开发、算法调试到软硬件联调的实践经验。
+          重庆大学 2023 级通信工程本科生。围绕嵌入式控制、视觉信号测量和无线通信开展项目实践，参与系统方案设计、模块开发与软硬件联调。
         </p>
         <div class="intro__facts" aria-label="背景摘要">
           <span>专业排名 4/108</span>
@@ -54,7 +54,13 @@
           </div>
           <div class="section__body prose">
             <p>
-              我是重庆大学通信工程专业本科生，具备电路原理、数字信号处理和通信系统方面的基础。在项目实践中，主要参与嵌入式程序开发、图像与传感器数据处理、控制算法调试及系统联调。
+              我来自江西赣州，目前就读于重庆大学微电子与通信工程学院通信工程专业。本科阶段注重数理基础与专业知识的积累，在高等数学、线性代数、电路原理和数字信号处理等课程中取得了较好的成绩。
+            </p>
+            <p>
+              项目实践覆盖视觉测量与 DDS 信号控制、姿态估计与小车运动控制、LoRa 通信协议与上位机开发。我主要参与图像测量算法、传感器数据融合、底层接口开发和系统联调，积累了结合数学模型、采样数据与实际运行结果分析问题的经验。
+            </p>
+            <p>
+              在校期间累计参与志愿服务 145 小时以上，获得 2024 年 RoboMaster 西南赛区优秀志愿者称号。课外喜欢慢跑和羽毛球。
             </p>
           </div>
         </section>
@@ -66,23 +72,28 @@
           <div class="section__body">
             <div class="entry-head">
               <div>
-                <h3>重庆大学</h3>
+                <h3>重庆大学 <span class="school-note">985 高校</span></h3>
                 <p>微电子与通信工程学院 · 通信工程 · 本科</p>
               </div>
               <span class="entry-date">2023.09—至今</span>
             </div>
             <ul class="compact-list">
               <li>GPA 3.77/4.0；专业排名 4/108（前 4%）。</li>
-              <li>相关课程：微波技术基础 97、电路原理 96、数字信号处理 92。</li>
               <li>英语水平：CET-4 560；CET-6 547。</li>
             </ul>
+            <div class="course-list">
+              <h4>数理基础</h4>
+              <p>高等数学（93）、线性代数（92）、离散数学（92）。</p>
+              <h4>专业课程</h4>
+              <p>微波技术基础（97）、电路原理（96）、数字信号处理（92）、数字通信原理（88）、信号与系统（88）。</p>
+            </div>
           </div>
         </section>
 
         <section class="section" id="projects" aria-labelledby="projects-title">
           <div class="section__heading">
             <h2 id="projects-title">项目经历</h2>
-            <p>围绕实际任务，说明目标、个人工作与实现结果。</p>
+            <p>电子设计竞赛与专业课程实践。</p>
           </div>
           <div class="section__body project-list">
             <article class="project" aria-labelledby="project-lissajous">
@@ -91,21 +102,37 @@
                 <span class="entry-date">2026.07—2026.08</span>
               </div>
               <h3 id="project-lissajous">视觉反馈的李萨如图形显示控制装置</h3>
-              <p class="project__role">核心开发者 · 全国大学生电子设计竞赛 F 题</p>
+              <p class="project__role">核心成员 · 全国大学生电子设计竞赛 F 题</p>
               <dl class="project__details">
                 <div>
                   <dt>项目目标</dt>
-                  <dd>基于 STM32F407、AD9959 与 Orange Pi，对未知正弦信号进行非接触测频测相，并自动生成指定的李萨如图形。</dd>
+                  <dd>在示波器 X-Y 模式下，X 通道接入未知正弦信号，Y 通道接入装置输出信号。通过非接触视觉测量获得频率和相位差，再控制输出信号生成直线、圆形和“∞”形李萨如图形。</dd>
+                </div>
+                <div>
+                  <dt>系统方案</dt>
+                  <dd>以 Orange Pi 处理摄像头采集的示波器图像，由 STM32F407 控制 DDS 芯片 AD9959。视觉端通过 UART 反馈频差和相差，形成图像测量与信号输出之间的闭环。</dd>
                 </div>
                 <div>
                   <dt>我的工作</dt>
-                  <dd>参与视觉测量与底层闭环控制设计；利用短锯齿扫描和图像特征进行测频，结合数学模型估计相位，并通过 UART 反馈调整输出信号。</dd>
+                  <dd>负责图像测量算法和软硬件联调，参与闭环控制架构设计。利用短锯齿扫描与轨迹峰距法进行粗测频，通过候选频点精搜完成同步，并结合直线、椭圆和双分支模型估计相位差。</dd>
                 </div>
                 <div>
                   <dt>实现结果</dt>
-                  <dd>完成直线、圆形和“∞”形图形的自动生成与稳定显示，获得省级二等奖。</dd>
+                  <dd>完成目标图形的自动识别与显示控制，项目获得全国大学生电子设计竞赛省级二等奖。</dd>
                 </div>
               </dl>
+              <details class="project-more">
+                <summary>技术实现与调试难点</summary>
+                <div class="project-more__body">
+                  <ol class="method-list">
+                    <li><strong>先粗测频：</strong>利用周期已知的锯齿波，将时间映射为屏幕纵向位置，根据有效扫描高度与同侧峰距换算信号周期数，估算 1 kHz～100 kHz 范围内的频率。</li>
+                    <li><strong>再精搜同步：</strong>以粗测结果为中心，在 ±2 kHz 范围内按 100 Hz 步进搜索候选频率，根据图形稳定程度选择同步频点，减少全频段逐点搜索的耗时。</li>
+                    <li><strong>最后测相与控制：</strong>提取图形轮廓，利用 SVD 拟合椭圆参数并计算相位差。STM32 根据反馈调整 AD9959 的频率字和相位字；同频同相生成直线，同频正交并匹配显示幅度生成圆，二倍频配合相位控制生成“∞”形。</li>
+                  </ol>
+                  <p class="project-note">调试中关注图像噪声、测量稳定性与锁相响应时间。现阶段系统鲁棒性仍有改进空间，部分情况下存在锁相超时。</p>
+                </div>
+              </details>
+              <!-- 收到项目图片后，在此添加 figure，并使用等比例显示。 -->
               <p class="project__tech">STM32F407 / AD9959 / Orange Pi / UART / 计算机视觉</p>
             </article>
 
@@ -119,17 +146,32 @@
               <dl class="project__details">
                 <div>
                   <dt>项目目标</dt>
-                  <dd>在没有视觉反馈的条件下，使二轮小车保持直立，并沿指定闭合轨迹自主循迹。</dd>
+                  <dd>在不使用摄像头视觉反馈的条件下，使二轮小车保持直立，并沿指定闭合轨迹自主循迹。行驶与转弯过程中需要同时维持车身平衡、速度和方向。</dd>
+                </div>
+                <div>
+                  <dt>系统方案</dt>
+                  <dd>融合 MPU6050 六轴惯性传感器、编码器与灰度传感器数据，建立姿态估计、直立控制、速度控制和转向控制模块，并通过上位机观察运行状态与调节参数。</dd>
                 </div>
                 <div>
                   <dt>我的工作</dt>
-                  <dd>融合 MPU6050、编码器与灰度传感器数据，优化姿态估计，并参与电机驱动、三环级联 PID 控制及上位机实时调参。</dd>
+                  <dd>参与小车硬件结构、电机驱动与姿态解算模块开发，主要负责多源传感器数据融合、卡尔曼滤波优化和 PID 调试，完成 UART、I²C 接口及数据遥测联调。</dd>
                 </div>
                 <div>
                   <dt>实现结果</dt>
                   <dd>实现小车稳定平衡、闭环循迹和自主行驶。</dd>
                 </div>
               </dl>
+              <details class="project-more">
+                <summary>技术实现与调试难点</summary>
+                <div class="project-more__body">
+                  <ol class="method-list">
+                    <li><strong>姿态估计：</strong>融合加速度计与陀螺仪信息，优化卡尔曼滤波以降低陀螺仪长时间积分漂移对车身倾角估计的影响。</li>
+                    <li><strong>控制环协同：</strong>直立环保持平衡，速度环通过调整目标倾角控制前进速度，转向环根据轨迹偏差调节左右轮差速。先整定直立环，再调试速度与转向控制。</li>
+                    <li><strong>数据与参数调试：</strong>通过上位机遥测观察姿态和运行数据，实时调整控制参数。重点处理多源传感器采样时序配合，以及出弯后进入直行段时的方向修正。</li>
+                  </ol>
+                </div>
+              </details>
+              <!-- 收到项目图片后，在此添加 figure，并使用等比例显示。 -->
               <p class="project__tech">MPU6050 / 编码器 / 灰度传感器 / 卡尔曼滤波 / PID</p>
             </article>
 
@@ -139,22 +181,37 @@
                 <span class="entry-date">2026.06—2026.07</span>
               </div>
               <h3 id="project-lora">微型无中心自组网络</h3>
-              <p class="project__role">核心开发者 · LabVIEW 上位机与通信协议</p>
+              <p class="project__role">项目成员 · 通信系统综合设计与实践</p>
               <dl class="project__details">
                 <div>
                   <dt>项目目标</dt>
-                  <dd>基于 LoRa 搭建多节点对等通信系统，实现节点状态维护、文本通信、传感器数据采集与远程控制。</dd>
+                  <dd>搭建无固定中心节点的 LoRa 对等通信系统，实现节点自主入退网、在线状态维护、单播与广播文本通信、温湿度数据采集和远程设备控制。</dd>
+                </div>
+                <div>
+                  <dt>系统方案</dt>
+                  <dd>基于 ESP8266 与 LoRa 模块，使用 Arduino 开发节点程序。LabVIEW 负责管理、显示和生成串口命令，节点解析命令并进行无线收发，再将状态、传感器数据和执行结果回传上位机。</dd>
                 </div>
                 <div>
                   <dt>我的工作</dt>
-                  <dd>开发 LabVIEW 上位机，设计二进制通信协议，完成串口收发、数据校验、异常重同步及长文本分片重组。</dd>
+                  <dd>开发 LabVIEW 上位机，采用生产者–消费者架构组织界面事件、VISA 串口收发与协议解析；参与二进制协议设计，实现半帧组帧、校验和、异常重同步及长文本分片重组。</dd>
                 </div>
                 <div>
                   <dt>实现结果</dt>
                   <dd>实现多节点文本收发、在线状态可视化、传感器数据监测与彩灯远程控制。</dd>
                 </div>
               </dl>
-              <p class="project__tech">LoRa / Arduino / LabVIEW / VISA / 串口协议</p>
+              <details class="project-more">
+                <summary>技术实现与调试难点</summary>
+                <div class="project-more__body">
+                  <ol class="method-list">
+                    <li><strong>节点状态维护：</strong>通过节点 ID 区分通信对象，结合入退网消息和心跳报告维护在线状态，各节点可主动发起通信。</li>
+                    <li><strong>协议与可靠传输：</strong>数据帧包含帧头、类型、源与目标 ID、序号、长度、载荷和校验和。对长文本进行分片编号与接收端重组，结合 ACK、退避与超时重传应对弱链路下的丢包。</li>
+                    <li><strong>上位机解耦：</strong>用事件结构与命令队列协调操作，缓存不完整串口帧并校验解析结果，出现异常时重新寻找帧头，实时展示节点、日志和传感器数据。</li>
+                  </ol>
+                </div>
+              </details>
+              <!-- 收到项目图片后，在此添加 figure，并使用等比例显示。 -->
+              <p class="project__tech">ESP8266 / LoRa / Arduino / LabVIEW / VISA / 串口协议</p>
             </article>
           </div>
         </section>
@@ -179,8 +236,10 @@
             <ul class="honor-list">
               <li><span>全国大学生电子设计竞赛 · 省级二等奖</span><span>2026</span></li>
               <li><span>全国大学生数学竞赛 · 省级二等奖</span></li>
+              <li><span>中国国际大学生创新大赛 · 校级二等奖</span><span>2024</span></li>
               <li><span>重庆大学校级乙等奖学金两次、丙等奖学金一次</span></li>
               <li><span>重庆大学优秀共青团员</span><span>2025</span></li>
+              <li><span>大学生科研训练计划 · 结题良好</span></li>
             </ul>
           </div>
         </section>

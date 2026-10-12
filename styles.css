@@ -269,6 +269,29 @@ main section[id] {
   margin-top: 5px;
 }
 
+.school-note {
+  margin-left: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.course-list {
+  margin-top: 22px;
+}
+
+.course-list h4 {
+  margin: 14px 0 3px;
+  color: var(--accent-dark);
+  font-size: 14px;
+}
+
+.course-list p {
+  margin: 0;
+  color: #45566a;
+  font-size: 14px;
+}
+
 .project + .project {
   margin-top: 42px;
   padding-top: 39px;
@@ -321,6 +344,64 @@ main section[id] {
   line-height: 1.6;
 }
 
+.project-more {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #edf1f5;
+}
+
+.project-more summary {
+  width: fit-content;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.project-more summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.project-more__body {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.method-list {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.method-list li + li {
+  margin-top: 10px;
+}
+
+.method-list strong {
+  color: var(--accent-dark);
+}
+
+.project-note {
+  margin: 15px 0 0;
+  color: var(--muted);
+}
+
+.project-media {
+  margin: 22px 0 0;
+}
+
+.project-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-media figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .skill-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -360,7 +441,11 @@ main section[id] {
   border-bottom: 0;
 }
 
-.honor-list li span:last-child {
+.honor-list li span:first-child {
+  min-width: 0;
+}
+
+.honor-list li span:last-child:not(:first-child) {
   flex: none;
   color: var(--muted);
   font-size: 13px;
