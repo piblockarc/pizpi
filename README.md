@@ -28,6 +28,26 @@
 
 ## 添加项目图片
 
-将图片放入 `assets/`，在对应项目 HTML 注释位置加入 `figure`，使用 `project-media` 样式。图片默认 `width: 100%`、`height: auto`，保持原始比例，图注写明实物或运行结果。
+现有图片已放入各项目的 `project-gallery` 图片组。每张图片使用独立的 `figure` 和 `img`，按原始比例显示，点击后打开原图。
 
-目前尚未插入图片，收到整理好的素材后补充。奖学金比例、数学竞赛年份在两份材料中存在差异，页面暂未列出这些细节。
+1. 将新图片上传到仓库根目录；也可以放在 `assets/` 中。
+2. 在 `index.html` 对应项目的 `project-gallery` 内，复制以下代码。
+3. 将两处 `new-image.png` 替换为真实图片路径，并修改图注。
+4. 提交到 `main`，等待 GitHub Pages 自动更新。
+
+```html
+<figure class="project-media">
+  <a class="image-link" href="new-image.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：图片说明">
+    <img src="new-image.png" alt="图片说明" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>图片说明</figcaption>
+</figure>
+```
+
+- 一个 `img` 只填写一个 `src`；多张图片复制多段 `figure`。
+- 需要横跨整行的流程图，将 `class="project-media"` 改为 `class="project-media project-media--wide"`。
+- 电脑端根据可用宽度排成一列或两列，手机端自动使用单列。
+- 图片保持 `height: auto`，不使用固定高度或裁切。
+- 荣誉图片放在荣誉部分的 `section__body` 内。
+
+奖学金比例、数学竞赛年份在两份文字材料中存在差异，页面暂未列出这些细节。

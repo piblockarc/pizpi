@@ -9,7 +9,7 @@
     />
     <meta name="theme-color" content="#f8fafc" />
     <title>邓睿哲｜个人主页</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261012-gallery" />
   </head>
   <body>
     <a class="skip-link" href="#main">跳转到正文</a>
@@ -132,17 +132,34 @@
                   <p class="project-note">调试中关注图像噪声、测量稳定性与锁相响应时间。现阶段系统鲁棒性仍有改进空间，部分情况下存在锁相超时。</p>
                 </div>
               </details>
-              <figure class="project-media">
-       <img
-    src="李萨如图.png"
-    src="111.png"
-    src="12.png"
-    src="13.png"
-    alt="李萨如图形显示控制装置实物与设计思路"
-    loading="lazy"
-      />
-     <figcaption>装置实物与示波器显示效果</figcaption>
-     </figure>
+              <div class="project-gallery" aria-label="李萨如图形项目图片">
+                <!-- 新增图片时，在此复制一段 figure，并修改文件名与图注。 -->
+                <figure class="project-media project-media--wide">
+                  <a class="image-link" href="李萨如图.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：视觉测量与 DDS 闭环控制流程">
+                    <img src="李萨如图.png" alt="视觉测量与 DDS 闭环控制流程" width="524" height="150" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>视觉测量与 DDS 闭环控制流程</figcaption>
+                </figure>
+                <figure class="project-media">
+                  <a class="image-link" href="13.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：装置硬件平台">
+                    <img src="13.png" alt="装置硬件平台" width="1305" height="1205" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>装置硬件平台</figcaption>
+                </figure>
+                <figure class="project-media">
+                  <a class="image-link" href="111.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：锯齿扫描与轨迹峰距测频方法">
+                    <img src="111.png" alt="锯齿扫描与轨迹峰距测频方法" width="1672" height="941" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>锯齿扫描与轨迹峰距测频方法</figcaption>
+                </figure>
+                <figure class="project-media project-media--wide">
+                  <a class="image-link" href="12.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：SVD 椭圆拟合与相位差计算">
+                    <img src="12.png" alt="SVD 椭圆拟合与相位差计算" width="526" height="209" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>SVD 椭圆拟合与相位差计算</figcaption>
+                </figure>
+              </div>
+              <p class="gallery-hint">点击图片可查看原图。</p>
               <p class="project__tech">STM32F407 / AD9959 / Orange Pi / UART / 计算机视觉</p>
             </article>
 
@@ -181,15 +198,22 @@
                   </ol>
                 </div>
               </details>
-             <figure class="project-media">
-  <img
-    src="21.png"
-    src="22.png"
-    alt="二轮小车实物图"
-    loading="lazy"
-  />
-  <figcaption>装置实物</figcaption>
-</figure>
+              <div class="project-gallery" aria-label="二轮自平衡车项目图片">
+                <!-- 新增图片时，在此复制一段 figure，并修改文件名与图注。 -->
+                <figure class="project-media">
+                  <a class="image-link" href="21.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：二轮自平衡车硬件结构">
+                    <img src="21.png" alt="二轮自平衡车硬件结构" width="1448" height="1086" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>二轮自平衡车硬件结构</figcaption>
+                </figure>
+                <figure class="project-media">
+                  <a class="image-link" href="22.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：闭合轨迹循迹运行效果">
+                    <img src="22.png" alt="闭合轨迹循迹运行效果" width="335" height="173" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>闭合轨迹循迹运行效果</figcaption>
+                </figure>
+              </div>
+              <p class="gallery-hint">点击图片可查看原图。</p>
               <p class="project__tech">MPU6050 / 编码器 / 灰度传感器 / 卡尔曼滤波 / PID</p>
             </article>
 
@@ -228,14 +252,16 @@
                   </ol>
                 </div>
               </details>
-   <figure class="project-media">
-  <img
-    src="3.png"
-    alt="无中心自组网络设计"
-    loading="lazy"
-  />
-  <figcaption>装置实物与显示效果</figcaption>
-</figure>
+              <div class="project-gallery" aria-label="LoRa 自组网络项目图片">
+                <!-- 新增图片时，在此复制一段 figure，并修改文件名与图注。 -->
+                <figure class="project-media">
+                  <a class="image-link" href="3.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：无线节点硬件平台与 LabVIEW 监测界面">
+                    <img src="3.png" alt="无线节点硬件平台与 LabVIEW 监测界面" width="771" height="388" loading="lazy" decoding="async" />
+                  </a>
+                  <figcaption>无线节点硬件平台与 LabVIEW 监测界面</figcaption>
+                </figure>
+              </div>
+              <p class="gallery-hint">点击图片可查看原图。</p>
               <p class="project__tech">ESP8266 / LoRa / Arduino / LabVIEW / VISA / 串口协议</p>
             </article>
           </div>
@@ -266,15 +292,18 @@
               <li><span>重庆大学优秀共青团员</span><span>2025</span></li>
               <li><span>大学生科研训练计划 · 结题良好</span></li>
             </ul>
+            <div class="project-gallery" aria-label="荣誉奖项证明">
+              <!-- 新增图片时，在此复制一段 figure，并修改文件名与图注。 -->
+              <figure class="project-media">
+                <a class="image-link" href="屏幕截图 2026-10-12 214205.png" target="_blank" rel="noopener noreferrer" aria-label="查看原图：奖学金、竞赛与科研训练项目证明">
+                  <img src="屏幕截图 2026-10-12 214205.png" alt="奖学金、竞赛与科研训练项目证明" width="1773" height="885" loading="lazy" decoding="async" />
+                </a>
+                <figcaption>奖学金、竞赛与科研训练项目证明</figcaption>
+              </figure>
+            </div>
+            <p class="gallery-hint">点击图片可查看原图。</p>
           </div>
-  <figure class="project-media">
-  <img
-    src="屏幕截图 2026-10-12 214205.png"
-    alt="奖项证明"
-    loading="lazy"
-  />
-  <figcaption>奖项内容</figcaption>
-</figure>
+
         </section>
 
         <section class="section section--last" id="contact" aria-labelledby="contact-title">
